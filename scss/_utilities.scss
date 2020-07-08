@@ -1,7 +1,12 @@
 .container {
-  padding: 0 6rem;
+  padding: 0 2rem;
   margin: 0 auto;
   width: 100%;
+}
+
+.social-icons {
+  display: block;
+  width: 1.2rem;
 }
 
 .flex-container {
@@ -26,4 +31,14 @@
 
 .grid-container {
   display: grid;
+}
+
+@mixin textfont {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+@mixin headingfont {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
