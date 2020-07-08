@@ -1,0 +1,23 @@
+@import "./resets";
+@import "variables";
+@import "utilities";
+
+header {
+  .logo-container {
+    width: 4rem;
+    border: 1px solid green;
+    padding: 0;
+  }
+
+  nav {
+    .nav-social-links {
+      display: none;
+    }
+  }
+
+  .menu-icon-container {
+    width: 1.5rem;
+
+    height: 3rem;
+  }
+}

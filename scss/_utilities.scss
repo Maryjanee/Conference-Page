@@ -1,0 +1,29 @@
+.container {
+  padding: 0 6rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+}
