@@ -7,8 +7,6 @@ header {
     display: none;
   }
 
-  border: 1px solid green;
-
   .logo {
     font-family: $logo-font;
     font-size: 1.8rem;
@@ -25,10 +23,46 @@ header {
   .menu-icon-container {
     width: 1.5rem;
   }
-  
-  
-}
 
+  .hero-area {
+    width: 100%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)),
+      url("../assets/conference.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $white;
+    padding-top: 4rem;
+    height: 80vh;
+
+    h1 {
+      @include textfont;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+    h2 {
+      @include headingfont;
+      font-size: 3.5rem;
+      background: linear-gradient(#eee, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 2rem 0;
+      width: 95%;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      width: 70%;
+      margin-bottom: 4rem;
+      color: #7891a2;
+    }
+  }
+  .date {
+    @include headingfont;
+    font-size: 2rem;
+  }
+}
 
 @media screen and(min-width: 768px) {
   .container {
@@ -83,7 +117,7 @@ header {
   .logo {
     font-family: $logo-font;
     font-size: 1.8rem;
-    color: $red;
+    color: $black;
   }
 
   .container {
