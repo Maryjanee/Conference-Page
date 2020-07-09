@@ -34,6 +34,12 @@ p {
   width: 100%;
 }
 
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  color: #272a31;
+}
+
 .active {
   color: #ec5242;
 }
@@ -124,12 +130,6 @@ p {
 
 header .nav-social-links {
   display: none;
-}
-
-header .logo {
-  font-family: "Dancing Script", cursive;
-  font-size: 1.8rem;
-  color: #272a31;
 }
 
 header nav {
@@ -298,9 +298,21 @@ header .date {
   border-radius: 50%;
 }
 
+#partners {
+  background: #3c3f46;
+}
+
+#partners div {
+  height: 30vh;
+}
+
+#partners img {
+  width: 10rem;
+}
+
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 4rem;
+    padding: 0 6rem;
   }
   header {
     font-family: "Lato", sans-serif;
