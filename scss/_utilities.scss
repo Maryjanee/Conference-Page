@@ -26,12 +26,28 @@ p {
   color: $white;
 }
 
+.text-red {
+  color: $red;
+}
+
+.text-black {
+  color: $black;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
 
 .text-capitalize {
   text-transform: capitalize;
+}
+
+.text-italic {
+  font-style: italic;
 }
 
 .social-icons {
@@ -82,4 +98,11 @@ p {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@mixin speakerImg {
+  width: 8rem;
+  height: 8rem;
+  background-size: cover;
+  border-radius: 50%;
 }

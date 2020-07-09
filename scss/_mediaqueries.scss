@@ -84,4 +84,12 @@
       padding-bottom: 2rem;
     }
   }
+
+  #speakers {
+    .speaker-section {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem;
+      margin-bottom: 2rem;
+    }
+  }
 }

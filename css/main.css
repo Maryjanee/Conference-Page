@@ -46,12 +46,29 @@ p {
   color: #fff;
 }
 
+.text-red {
+  color: #ec5242;
+}
+
+.text-black {
+  color: #272a31;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
 
 .text-capitalize {
   text-transform: capitalize;
+}
+
+.text-italic {
+  font-style: italic;
 }
 
 .social-icons {
@@ -217,6 +234,70 @@ header .date {
   width: 3rem;
 }
 
+#speakers {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#speakers .speaker-section {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#speakers .speaker-section .speaker-details {
+  margin-left: 2rem;
+}
+
+#speakers .speaker-section .img-1 {
+  background: url(../assets/Alex-Foster.jpeg);
+  width: 8rem;
+  height: 8rem;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#speakers .speaker-section .img-2 {
+  background: url(../assets/Chaka-kann.jpg);
+  width: 8rem;
+  height: 8rem;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#speakers .speaker-section .img-3 {
+  background: url(../assets/Gwen-Steven.jpg);
+  width: 8rem;
+  height: 8rem;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#speakers .speaker-section .img-4 {
+  background: url(../assets/Hannah-Lann.jpeg);
+  width: 8rem;
+  height: 8rem;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#speakers .speaker-section .img-5 {
+  background: url(../assets/maria-delvin.jpg);
+  width: 8rem;
+  height: 8rem;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#speakers .speaker-section .img-6 {
+  background: url(../assets/steve-harris.jpg);
+  width: 8rem;
+  height: 8rem;
+  background-size: cover;
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 4rem;
@@ -296,5 +377,11 @@ header .date {
     background: transparent;
     text-decoration: underline;
     padding-bottom: 2rem;
+  }
+  #speakers .speaker-section {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    margin-bottom: 2rem;
   }
 }

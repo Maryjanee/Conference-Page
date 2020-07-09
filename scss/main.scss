@@ -98,6 +98,7 @@ header {
   .program-content * {
     margin-right: 2rem;
   }
+
   a {
     display: block;
     background: $red;
@@ -109,5 +110,46 @@ header {
 .program-icons {
   width: 3rem;
 }
+
+#speakers {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .speaker-section {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+
+    .speaker-details {
+      margin-left: 2rem;
+    }
+
+    .img-1 {
+      background: url(../assets/Alex-Foster.jpeg);
+      @include speakerImg;
+    }
+    .img-2 {
+      background: url(../assets/Chaka-kann.jpg);
+      @include speakerImg;
+    }
+    .img-3 {
+      background: url(../assets/Gwen-Steven.jpg);
+      @include speakerImg;
+    }
+    .img-4 {
+      background: url(../assets/Hannah-Lann.jpeg);
+      @include speakerImg;
+    }
+    .img-5 {
+      background: url(../assets/maria-delvin.jpg);
+      @include speakerImg;
+    }
+    .img-6 {
+      background: url(../assets/steve-harris.jpg);
+      @include speakerImg;
+    }
+  }
+}
+
 
 @import "mediaqueries";
