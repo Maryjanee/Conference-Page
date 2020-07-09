@@ -18,6 +18,14 @@ p {
   color: $red;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: $white;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -29,6 +37,9 @@ p {
 .social-icons {
   display: block;
   width: 1.2rem;
+}
+.place-center {
+  margin: 0 auto;
 }
 
 .flex-container {
@@ -53,6 +64,13 @@ p {
 
 .grid-container {
   display: grid;
+}
+
+.section-line {
+  display: block;
+  width: 8%;
+  margin: 0 auto 1rem auto;
+  border: 2px solid $red;
 }
 
 @mixin textfont {

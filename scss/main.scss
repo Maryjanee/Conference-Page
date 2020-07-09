@@ -1,4 +1,4 @@
-@import "./resets";
+@import "resets";
 @import "variables";
 @import "utilities";
 
@@ -10,7 +10,7 @@ header {
   .logo {
     font-family: $logo-font;
     font-size: 1.8rem;
-    color: $red;
+    color: $black;
   }
 
   nav {
@@ -18,6 +18,8 @@ header {
     .nav-links-container {
       display: none;
     }
+
+    padding: 4rem;
   }
 
   .menu-icon-container {
@@ -26,25 +28,28 @@ header {
 
   .hero-area {
     width: 100%;
-
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)),
       url("../assets/conference.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: $white;
-    padding-top: 4rem;
-    height: 80vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     h1 {
       @include textfont;
+
       font-size: 1.5rem;
       letter-spacing: 2px;
     }
+
     h2 {
       @include headingfont;
+
       font-size: 3.5rem;
       background: linear-gradient(#eee, #333);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin: 2rem 0;
@@ -55,81 +60,54 @@ header {
       font-size: 1.1rem;
       width: 70%;
       margin-bottom: 4rem;
-      color: #7891a2;
+      color: $white;
     }
   }
+
   .date {
     @include headingfont;
+
     font-size: 2rem;
   }
 }
 
-@media screen and(min-width: 768px) {
-  .container {
-    padding: 0 4rem;
+#program {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: url(../assets/sectionbg.png);
+
+  .program-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
   }
 
-  header {
+  h2 {
     @include textfont;
+  }
 
-    .logo {
-      font-family: $logo-font;
-      font-size: 1.5rem;
+  .program-content {
+    background: $blacka;
+    padding: 1rem;
+
+    h3 {
       color: $red;
     }
+  }
 
-    .nav-social-links {
-      display: flex;
-      background: $black;
-      padding-top: 0.7rem;
-      padding-bottom: 0.7rem;
-
-      .social-links {
-        margin-left: 1.5rem;
-        color: $white;
-      }
-    }
-
-    nav {
-      padding-top: 1.5rem !important;
-      padding-bottom: 1.5rem !important;
-      background: $white;
-      box-shadow: 0 4px 2px -2px #e6e6e6;
-
-      .nav-links-container {
-        display: flex;
-        width: 75%;
-
-        .donate-link {
-          border: 3px solid $red;
-          padding: 1rem 2rem;
-        }
-      }
-    }
-
-    .menu-icon-container {
-      display: none;
-    }
+  .program-content * {
+    margin-right: 2rem;
+  }
+  a {
+    display: block;
+    background: $red;
+    width: 70%;
+    padding: 1rem 1.5rem;
   }
 }
 
-@media screen and(min-width: 1024px) {
-  .logo {
-    font-family: $logo-font;
-    font-size: 1.8rem;
-    color: $black;
-  }
-
-  .container {
-    padding: 0 10rem;
-  }
-
-  .nav-links-container {
-    display: flex;
-    flex: 0.7;
-  }
-
-  .donate-link {
-    border: 4px solid $red;
-  }
+.program-icons {
+  width: 3rem;
 }
+
+@import "mediaqueries";

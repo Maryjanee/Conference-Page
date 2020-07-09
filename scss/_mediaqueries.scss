@@ -1,0 +1,87 @@
+@media screen and(min-width: 768px) {
+  .container {
+    padding: 0 4rem;
+  }
+
+  header {
+    @include textfont;
+
+    .logo {
+      font-family: $logo-font;
+      font-size: 1.5rem;
+      color: $black;
+    }
+
+    .nav-social-links {
+      display: flex;
+      background: $black;
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+
+      .social-links {
+        margin-left: 1.5rem;
+        color: $white;
+      }
+    }
+
+    nav {
+      padding-top: 1.5rem !important;
+      padding-bottom: 1.5rem !important;
+      background: $white;
+      box-shadow: 0 4px 2px -2px #e6e6e6;
+
+      .nav-links-container {
+        display: flex;
+        width: 55%;
+        font-size: 0.9rem;
+
+        a {
+          color: $black;
+        }
+
+        .active {
+          color: $red;
+        }
+
+        .donate-link {
+          border: 3px solid $red;
+          padding: 1rem 1.5rem;
+        }
+      }
+    }
+
+    .hero-area {
+      padding-top: 8rem !important;
+      padding-bottom: 8rem;
+    }
+
+    .menu-icon-container {
+      display: none;
+    }
+  }
+
+  #program {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .program-grid {
+      margin-top: 1.5rem;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .program-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .program-content * {
+      margin: 1rem auto;
+    }
+
+    a {
+      background: transparent;
+      text-decoration: underline;
+      padding-bottom: 2rem;
+    }
+  }
+}

@@ -3,7 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: lato, sans-serif;
 }
 
 li {
@@ -38,6 +38,14 @@ p {
   color: #ec5242;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #fff;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -49,6 +57,10 @@ p {
 .social-icons {
   display: block;
   width: 1.2rem;
+}
+
+.place-center {
+  margin: 0 auto;
 }
 
 .flex-container {
@@ -86,6 +98,13 @@ p {
   display: grid;
 }
 
+.section-line {
+  display: block;
+  width: 8%;
+  margin: 0 auto 1rem auto;
+  border: 2px solid #ec5242;
+}
+
 header .nav-social-links {
   display: none;
 }
@@ -93,7 +112,11 @@ header .nav-social-links {
 header .logo {
   font-family: "Dancing Script", cursive;
   font-size: 1.8rem;
-  color: #ec5242;
+  color: #272a31;
+}
+
+header nav {
+  padding: 4rem;
 }
 
 header nav .nav-social-links,
@@ -113,8 +136,8 @@ header .hero-area {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  padding-top: 4rem;
-  height: 80vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 header .hero-area h1 {
@@ -131,6 +154,7 @@ header .hero-area h2 {
   font-size: 3.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333));
   background: linear-gradient(#eee, #333);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 2rem 0;
@@ -141,7 +165,7 @@ header .hero-area .description {
   font-size: 1.1rem;
   width: 70%;
   margin-bottom: 4rem;
-  color: #7891a2;
+  color: #fff;
 }
 
 header .date {
@@ -149,6 +173,48 @@ header .date {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 2rem;
+}
+
+#program {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: url(../assets/sectionbg.png);
+}
+
+#program .program-grid {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#program h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+#program .program-content {
+  background: #3c3f46;
+  padding: 1rem;
+}
+
+#program .program-content h3 {
+  color: #ec5242;
+}
+
+#program .program-content * {
+  margin-right: 2rem;
+}
+
+#program a {
+  display: block;
+  background: #ec5242;
+  width: 70%;
+  padding: 1rem 1.5rem;
+}
+
+.program-icons {
+  width: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -162,7 +228,7 @@ header .date {
   header .logo {
     font-family: "Dancing Script", cursive;
     font-size: 1.5rem;
-    color: #ec5242;
+    color: #272a31;
   }
   header .nav-social-links {
     display: -webkit-box;
@@ -187,35 +253,48 @@ header .date {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 75%;
+    width: 55%;
+    font-size: 0.9rem;
+  }
+  header nav .nav-links-container a {
+    color: #272a31;
+  }
+  header nav .nav-links-container .active {
+    color: #ec5242;
   }
   header nav .nav-links-container .donate-link {
     border: 3px solid #ec5242;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
+  }
+  header .hero-area {
+    padding-top: 8rem !important;
+    padding-bottom: 8rem;
   }
   header .menu-icon-container {
     display: none;
   }
-}
-
-@media screen and (min-width: 1024px) {
-  .logo {
-    font-family: "Dancing Script", cursive;
-    font-size: 1.8rem;
-    color: #272a31;
+  #program {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
-  .container {
-    padding: 0 10rem;
+  #program .program-grid {
+    margin-top: 1.5rem;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
   }
-  .nav-links-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0.7;
-        -ms-flex: 0.7;
-            flex: 0.7;
+  #program .program-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
-  .donate-link {
-    border: 4px solid #ec5242;
+  #program .program-content * {
+    margin: 1rem auto;
+  }
+  #program a {
+    background: transparent;
+    text-decoration: underline;
+    padding-bottom: 2rem;
   }
 }
