@@ -64,6 +64,10 @@ p {
   background: #fff;
 }
 
+.bg-red {
+  background: #ec5242;
+}
+
 .flex-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -141,6 +145,21 @@ p {
   width: 5%;
   margin: 0 auto 1rem auto;
   border: 1px solid #ec5242;
+}
+
+.step {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid #bfbfbf;
+  border-radius: 5rem;
+  font-size: 0.8rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.step span {
+  margin-left: 0.5rem;
+  color: #272a31;
 }
 
 header .nav-social-links {
@@ -356,21 +375,6 @@ footer {
   background: #dfdfdf;
 }
 
-.tickets-table p {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border: 1px solid #bfbfbf;
-  border-radius: 5rem;
-  font-size: 0.8rem;
-  width: 100%;
-  max-width: 400px;
-}
-
-.tickets-table p span {
-  margin-left: 0.5rem;
-  color: #272a31;
-}
-
 .tickets-table div {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -411,6 +415,36 @@ footer {
 
 .tickets-table .border-gradient-purple {
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.lunch {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.lunch-table {
+  border: 1px solid #dfdfdf;
+  margin: 4rem auto;
+}
+
+.lunch-table input {
+  margin-left: 0.4rem;
+}
+
+.lunch-table h3 {
+  background: #f6f6f6;
+}
+
+.lunch-table div {
+  padding: 1rem;
+}
+
+.lunch button {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -535,5 +569,18 @@ footer {
   tr,
   th {
     padding: 100rem;
+  }
+  .lunch {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .lunch-table {
+    max-width: 700px;
+  }
+  .lunch-table input {
+    margin-left: 0.4rem;
+  }
+  .lunch button {
+    width: 30%;
   }
 }
