@@ -20,6 +20,18 @@ header {
     width: 1.5rem;
   }
 
+  .seminar-title {
+    @include headingfont;
+
+    font-size: 3.5rem;
+    background: linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 2rem 0;
+    width: 95%;
+  }
+
   .hero-area {
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)),
@@ -36,18 +48,6 @@ header {
 
       font-size: 1.5rem;
       letter-spacing: 2px;
-    }
-
-    h2 {
-      @include headingfont;
-
-      font-size: 3.5rem;
-      background: linear-gradient(#eee, #333);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin: 2rem 0;
-      width: 95%;
     }
 
     .description {
@@ -145,14 +145,39 @@ header {
     }
   }
 }
+
 #partners {
   background: $blacka;
+
   div {
-    height: 30vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
   }
+
   img {
     width: 10rem;
   }
+}
+
+.more-info {
+  background: $grey;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.about-content {
+  padding: 2rem 3rem;
+  line-height: 2rem;
+  color: $blacka;
+}
+
+footer {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  background: #f2f2f2;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
 }
 
 @import "mediaqueries";

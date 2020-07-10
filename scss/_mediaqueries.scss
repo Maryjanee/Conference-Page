@@ -92,4 +92,20 @@
       margin-bottom: 2rem;
     }
   }
+
+  #partners {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    div {
+      grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+    }
+  }
+  footer {
+    grid-template-columns: 1fr 3fr;
+
+    a {
+      padding-left: 4rem;
+    }
+  }
 }

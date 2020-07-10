@@ -60,6 +60,10 @@ p {
   color: #272a31;
 }
 
+.bg-white {
+  background: #fff;
+}
+
 .flex-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -145,6 +149,20 @@ header .menu-icon-container {
   width: 1.5rem;
 }
 
+header .seminar-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333));
+  background: linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 2rem 0;
+  width: 95%;
+}
+
 header .hero-area {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(50, 55, 100, 0.9))), url("../assets/conference.jpg");
@@ -162,20 +180,6 @@ header .hero-area h1 {
   font-weight: 400;
   font-size: 1.5rem;
   letter-spacing: 2px;
-}
-
-header .hero-area h2 {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 3.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333));
-  background: linear-gradient(#eee, #333);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 2rem 0;
-  width: 95%;
 }
 
 header .hero-area .description {
@@ -303,11 +307,35 @@ header .date {
 }
 
 #partners div {
-  height: 30vh;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  justify-items: center;
 }
 
 #partners img {
   width: 10rem;
+}
+
+.more-info {
+  background: #F7F7F7;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.about-content {
+  padding: 2rem 3rem;
+  line-height: 2rem;
+  color: #3c3f46;
+}
+
+footer {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  background: #f2f2f2;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -395,5 +423,20 @@ header .date {
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
     margin-bottom: 2rem;
+  }
+  #partners {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #partners div {
+    -ms-grid-columns: (minmax(186px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+  }
+  footer {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
+  footer a {
+    padding-left: 4rem;
   }
 }
