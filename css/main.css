@@ -135,6 +135,10 @@ p {
           align-items: flex-end;
 }
 
+.d-block {
+  display: block;
+}
+
 .grid-container {
   display: -ms-grid;
   display: grid;
@@ -347,18 +351,6 @@ header .date {
   width: 10rem;
 }
 
-.more-info {
-  background: #f7f7f7;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.about-content {
-  padding: 2rem 3rem;
-  line-height: 2rem;
-  color: #4d4d4e;
-}
-
 footer {
   padding-top: 15rem;
   padding-bottom: 15rem;
@@ -445,6 +437,27 @@ footer {
   border: 0;
   padding: 1rem;
   font-size: 1rem;
+}
+
+.about-heading {
+  width: 100%;
+}
+
+.more-info {
+  background: #f7f7f7;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.more-info .about-content {
+  padding: 2rem;
+  line-height: 2rem;
+  color: #4d4d4e;
+}
+
+.more-info div {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -582,5 +595,24 @@ footer {
   }
   .lunch button {
     width: 30%;
+  }
+  .about-heading {
+    max-width: 700px;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .more-info {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .about-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  div {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }

@@ -149,4 +149,23 @@
   .lunch button {
     width: 30%;
   }
+  .about-heading {
+    max-width: 700px;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .more-info {
+    @include paddingbgTb;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  div {
+    @include paddingbgTb;
+  }
 }

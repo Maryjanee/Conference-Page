@@ -170,18 +170,6 @@ header {
   }
 }
 
-.more-info {
-  background: $grey;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.about-content {
-  padding: 2rem 3rem;
-  line-height: 2rem;
-  color: $blacka;
-}
-
 footer {
   padding-top: 15rem;
   padding-bottom: 15rem;
@@ -245,6 +233,7 @@ footer {
 .lunch-table {
   border: 1px solid $table-grey;
   margin: 4rem auto;
+
   input {
     margin-left: 0.4rem;
   }
@@ -263,6 +252,24 @@ footer {
   border: 0;
   padding: 1rem;
   font-size: 1rem;
+}
+
+.about-heading {
+  width: 100%;
+}
+
+.more-info {
+  background: $grey;
+  @include paddingsmTb;
+
+  .about-content {
+    padding: 2rem;
+    line-height: 2rem;
+    color: $blacka;
+  }
+  div {
+    @include paddingsmTb;
+  }
 }
 
 @import "mediaqueries";
