@@ -171,6 +171,7 @@
 
   #venue {
     @inlude paddingbgTb;
+
     .grid-container {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 3rem;
@@ -179,6 +180,16 @@
 
     img {
       width: 100%;
+    }
+  }
+  #past-events {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      div {
+      
+        
+      }
     }
   }
 }

@@ -285,12 +285,25 @@ footer {
   }
 }
 
-#past-event {
+#past-events {
   .grid-container {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     div {
-      background: 1fr;
+      background: linear-gradient(
+          rgba(134, 36, 22, 0.5),
+          rgba(134, 36, 22, 0.5)
+        ),
+        url("/assets/conference1.jpeg") center center;
+      background-size: cover;
+
+      /* Here's the same styles we applied to our content-div earlier */
+      color: white;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
   }
 }

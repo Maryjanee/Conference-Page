@@ -479,14 +479,32 @@ footer {
   margin: 1rem 0;
 }
 
-#past-event .grid-container {
+#past-events .grid-container {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
 
-#past-event .grid-container div {
-  background: 1fr;
+#past-events .grid-container div {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.5)), to(rgba(134, 36, 22, 0.5))), url("/assets/conference1.jpeg") center center;
+  background: linear-gradient(rgba(134, 36, 22, 0.5), rgba(134, 36, 22, 0.5)), url("/assets/conference1.jpeg") center center;
+  background-size: cover;
+  /* Here's the same styles we applied to our content-div earlier */
+  color: white;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
@@ -655,5 +673,10 @@ footer {
   }
   #venue img {
     width: 100%;
+  }
+  #past-events .grid-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
   }
 }
