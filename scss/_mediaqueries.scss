@@ -168,4 +168,17 @@
   div {
     @include paddingbgTb;
   }
+
+  #venue {
+    @inlude paddingbgTb;
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+      font-size: 0.9rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 }

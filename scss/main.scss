@@ -272,4 +272,27 @@ footer {
   }
 }
 
+#venue {
+  @include paddingsmTb .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  img {
+    margin: 0.8rem 0;
+  }
+  a {
+    margin: 1rem 0;
+  }
+}
+
+#past-event {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    div {
+      background: 1fr;
+    }
+  }
+}
+
 @import "mediaqueries";

@@ -460,6 +460,35 @@ footer {
   padding-bottom: 2rem;
 }
 
+#venue {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#venue .grid-container {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+#venue img {
+  margin: 0.8rem 0;
+}
+
+#venue a {
+  margin: 1rem 0;
+}
+
+#past-event .grid-container {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+#past-event .grid-container div {
+  background: 1fr;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 6rem;
@@ -614,5 +643,17 @@ footer {
   div {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+  #venue {
+    @inlude paddingbgTb;
+  }
+  #venue .grid-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    font-size: 0.9rem;
+  }
+  #venue img {
+    width: 100%;
   }
 }
