@@ -108,4 +108,30 @@
       padding-left: 4rem;
     }
   }
+
+  .tickets-table {
+    @include paddingbgTb;
+    div {
+      @include paddingbgTb;
+    }
+
+    height: 80vh;
+    background: $dark-grey;
+
+    p {
+      margin-top: 4rem;
+
+      font-size: 0.9rem;
+      width: 80%;
+    }
+  }
+
+  table {
+    max-width: 1000px;
+  }
+
+  tr,
+  th {
+    padding: 100rem;
+  }
 }

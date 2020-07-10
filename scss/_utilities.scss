@@ -64,6 +64,7 @@ p {
   display: block;
   width: 1.2rem;
 }
+
 .place-center {
   margin: 0 auto;
 }
@@ -80,6 +81,10 @@ p {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -88,15 +93,19 @@ p {
   align-items: center;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
 .grid-container {
   display: grid;
 }
 
 .section-line {
   display: block;
-  width: 8%;
+  width: 5%;
   margin: 0 auto 1rem auto;
-  border: 2px solid $red;
+  border: 1px solid $red;
 }
 
 @mixin textfont {
@@ -115,4 +124,14 @@ p {
   height: 8rem;
   background-size: cover;
   border-radius: 50%;
+}
+
+@mixin paddingsmTb {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@mixin paddingbgTb {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }

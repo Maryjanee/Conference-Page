@@ -108,6 +108,11 @@ p {
           justify-content: space-between;
 }
 
+.justify-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .justify-end {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -120,6 +125,12 @@ p {
           align-items: center;
 }
 
+.align-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .grid-container {
   display: -ms-grid;
   display: grid;
@@ -127,9 +138,9 @@ p {
 
 .section-line {
   display: block;
-  width: 8%;
+  width: 5%;
   margin: 0 auto 1rem auto;
-  border: 2px solid #ec5242;
+  border: 1px solid #ec5242;
 }
 
 header .nav-social-links {
@@ -215,7 +226,7 @@ header .date {
 }
 
 #program .program-content {
-  background: #3c3f46;
+  background: #4d4d4e;
   padding: 1rem;
 }
 
@@ -303,7 +314,7 @@ header .date {
 }
 
 #partners {
-  background: #3c3f46;
+  background: #4d4d4e;
 }
 
 #partners div {
@@ -318,7 +329,7 @@ header .date {
 }
 
 .more-info {
-  background: #F7F7F7;
+  background: #f7f7f7;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -326,7 +337,7 @@ header .date {
 .about-content {
   padding: 2rem 3rem;
   line-height: 2rem;
-  color: #3c3f46;
+  color: #4d4d4e;
 }
 
 footer {
@@ -336,6 +347,70 @@ footer {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 2rem;
+}
+
+.tickets-table {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 70vh;
+  background: #dfdfdf;
+}
+
+.tickets-table p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid #bfbfbf;
+  border-radius: 5rem;
+  font-size: 0.8rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.tickets-table p span {
+  margin-left: 0.5rem;
+  color: #272a31;
+}
+
+.tickets-table div {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tickets-table table {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.tickets-table table input {
+  display: block;
+  margin: 0 auto;
+}
+
+.tickets-table table tr {
+  background: #fff;
+}
+
+.tickets-table table .table-heading {
+  background: #dfdfdf;
+}
+
+.tickets-table th,
+.tickets-table td {
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.tickets-table .border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+
+.tickets-table .border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 
 @media screen and (min-width: 768px) {
@@ -438,5 +513,27 @@ footer {
   }
   footer a {
     padding-left: 4rem;
+  }
+  .tickets-table {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 80vh;
+    background: #d3d3d3;
+  }
+  .tickets-table div {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .tickets-table p {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    width: 80%;
+  }
+  table {
+    max-width: 1000px;
+  }
+  tr,
+  th {
+    padding: 100rem;
   }
 }

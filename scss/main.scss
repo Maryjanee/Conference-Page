@@ -120,27 +120,37 @@ header {
 
     .img-1 {
       background: url(../assets/Alex-Foster.jpeg);
+
       @include speakerImg;
     }
+
     .img-2 {
       background: url(../assets/Chaka-kann.jpg);
+
       @include speakerImg;
     }
+
     .img-3 {
       background: url(../assets/Gwen-Steven.jpg);
+
       @include speakerImg;
     }
+
     .img-4 {
       background: url(../assets/Hannah-Lann.jpeg);
+
       @include speakerImg;
     }
+
     .img-5 {
       background: url(../assets/maria-delvin.jpg);
+
       @include speakerImg;
     }
 
     .img-6 {
       background: url(../assets/steve-harris.jpg);
+
       @include speakerImg;
     }
   }
@@ -178,6 +188,68 @@ footer {
   background: #f2f2f2;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
+}
+
+.tickets-table {
+  @include paddingsmTb;
+
+  height: 70vh;
+  background: $table-grey;
+
+  p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid #bfbfbf;
+    border-radius: 5rem;
+    font-size: 0.8rem;
+    width: 100%;
+    max-width: 400px;
+
+    span {
+      margin-left: 0.5rem;
+      color: $black;
+    }
+  }
+  div {
+    @include paddingsmTb;
+  }
+
+  table {
+    margin-top: 1rem;
+    width: 100%;
+
+    input {
+      display: block;
+      margin: 0 auto;
+    }
+
+    tr {
+      background: $white;
+    }
+
+    .table-heading {
+      background: $table-grey;
+    }
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+  }
+
+  .border-gradient-purple {
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  }
 }
 
 @import "mediaqueries";
