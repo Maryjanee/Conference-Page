@@ -34,7 +34,8 @@ header {
 
   .hero-area {
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)),
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)),
       url("../assets/conference.jpg");
     background-position: center;
     background-size: cover;
@@ -65,8 +66,38 @@ header {
   }
 }
 
+.lunch {
+  @include paddingsmTb;
+}
+
+.lunch-table {
+  border: 1px solid $table-grey;
+  margin: 4rem auto;
+
+  input {
+    margin-left: 0.4rem;
+  }
+
+  h3 {
+    background: $table-top;
+  }
+
+  div {
+    padding: 1rem;
+  }
+}
+
+.lunch button {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
 #program {
   @include paddingbgTb;
+
   background: url(../assets/sectionbg.png);
 
   .program-grid {
@@ -172,6 +203,7 @@ header {
 
 footer {
   @include paddingsmTb;
+
   height: 30vh;
   background: $footer-grey;
   grid-template-columns: 1fr;
@@ -225,40 +257,13 @@ footer {
   }
 }
 
-.lunch {
-  @include paddingsmTb;
-}
-
-.lunch-table {
-  border: 1px solid $table-grey;
-  margin: 4rem auto;
-
-  input {
-    margin-left: 0.4rem;
-  }
-
-  h3 {
-    background: $table-top;
-  }
-  div {
-    padding: 1rem;
-  }
-}
-
-.lunch button {
-  display: block;
-  width: 100%;
-  border: 0;
-  padding: 1rem;
-  font-size: 1rem;
-}
-
 .about-heading {
   width: 100%;
 }
 
 .more-info {
   background: $grey;
+
   @include paddingsmTb;
 
   .about-content {
@@ -266,19 +271,24 @@ footer {
     line-height: 2rem;
     color: $blacka;
   }
+
   div {
     @include paddingsmTb;
   }
 }
 
 #venue {
-  @include paddingsmTb .grid-container {
+  @include paddingsmTb;
+
+  .grid-container {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
+
   img {
     margin: 0.8rem 0;
   }
+
   a {
     margin: 1rem 0;
   }
@@ -288,23 +298,30 @@ footer {
   .grid-container {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
+
     div {
-      background: linear-gradient(
+      background:
+        linear-gradient(
           rgba(134, 36, 22, 0.7),
           rgba(134, 36, 22, 0.7)
         ),
         url("/assets/conference1.jpeg") center center;
+
       @include pastimg;
     }
+
     .past-img2 {
-      background: linear-gradient(
+      background:
+        linear-gradient(
           rgba(134, 36, 22, 0.7),
           rgba(134, 36, 22, 0.7)
         ),
         url("/assets/confence-2.jpeg") center center;
+
       @include pastimg;
     }
   }
+
   .year {
     font-size: 3rem;
     font-weight: 700;

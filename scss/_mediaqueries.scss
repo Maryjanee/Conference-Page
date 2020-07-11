@@ -50,6 +50,24 @@
       }
     }
 
+    footer {
+      @include paddingbgTb;
+
+      height: 20vh;
+      background: $footer-grey;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+
+      div {
+        padding: 0;
+
+        p {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
     .hero-area {
       padding-top: 8rem;
       padding-bottom: 8rem;
@@ -177,10 +195,6 @@
     margin: 2rem auto;
   }
 
-  div {
-    @include paddingbgTb;
-  }
-
   #venue {
     @include paddingbgTb;
 
@@ -199,23 +213,6 @@
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem;
-    }
-  }
-
-  footer {
-    @include paddingbgTb;
-
-    height: 20vh;
-
-    background: $footer-grey;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    div {
-      padding: 0;
-      p {
-        padding-bottom: 1rem;
-      }
     }
   }
 }

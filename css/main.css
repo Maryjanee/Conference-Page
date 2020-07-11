@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: lato, sans-serif;
@@ -70,7 +70,7 @@ p {
 
 .flex-wrap {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .text-uppercase {
@@ -102,50 +102,50 @@ p {
 
 .justify-center {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .justify-space-between {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .justify-around {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-end {
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .align-start {
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .align-center {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .align-end {
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .flex-column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .d-block {
@@ -201,7 +201,13 @@ header .seminar-title {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 3.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#eee),
+    to(#333)
+  );
   background: linear-gradient(#eee, #333);
   background-clip: text;
   -webkit-background-clip: text;
@@ -212,8 +218,16 @@ header .seminar-title {
 
 header .hero-area {
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(50, 55, 100, 0.9))), url("../assets/conference.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)), url("../assets/conference.jpg");
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.8)),
+      to(rgba(50, 55, 100, 0.9))
+    ),
+    url("../assets/conference.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)),
+    url("../assets/conference.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -243,6 +257,36 @@ header .date {
   font-size: 2rem;
 }
 
+.lunch {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.lunch-table {
+  border: 1px solid #dfdfdf;
+  margin: 4rem auto;
+}
+
+.lunch-table input {
+  margin-left: 0.4rem;
+}
+
+.lunch-table h3 {
+  background: #f6f6f6;
+}
+
+.lunch-table div {
+  padding: 1rem;
+}
+
+.lunch button {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
 #program {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -251,7 +295,7 @@ header .date {
 
 #program .program-grid {
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -292,7 +336,7 @@ header .date {
 
 #speakers .speaker-section {
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
 
@@ -368,8 +412,8 @@ header .date {
 }
 
 .partners div {
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   justify-items: center;
 }
@@ -384,7 +428,7 @@ footer {
   height: 30vh;
   background: #e4eaed;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .tickets-table {
@@ -436,36 +480,6 @@ footer {
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 
-.lunch {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.lunch-table {
-  border: 1px solid #dfdfdf;
-  margin: 4rem auto;
-}
-
-.lunch-table input {
-  margin-left: 0.4rem;
-}
-
-.lunch-table h3 {
-  background: #f6f6f6;
-}
-
-.lunch-table div {
-  padding: 1rem;
-}
-
-.lunch button {
-  display: block;
-  width: 100%;
-  border: 0;
-  padding: 1rem;
-  font-size: 1rem;
-}
-
 .about-heading {
   width: 100%;
 }
@@ -494,7 +508,7 @@ footer {
 
 #venue .grid-container {
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
 
@@ -508,21 +522,37 @@ footer {
 
 #past-events .grid-container {
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
 
 #past-events .grid-container div {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.7)), to(rgba(134, 36, 22, 0.7))), url("/assets/conference1.jpeg") center center;
-  background: linear-gradient(rgba(134, 36, 22, 0.7), rgba(134, 36, 22, 0.7)), url("/assets/conference1.jpeg") center center;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(134, 36, 22, 0.7)),
+      to(rgba(134, 36, 22, 0.7))
+    ),
+    url("/assets/conference1.jpeg") center center;
+  background: linear-gradient(rgba(134, 36, 22, 0.7), rgba(134, 36, 22, 0.7)),
+    url("/assets/conference1.jpeg") center center;
   background-size: cover;
   color: white;
   min-height: 40vh;
 }
 
 #past-events .grid-container .past-img2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.7)), to(rgba(134, 36, 22, 0.7))), url("/assets/confence-2.jpeg") center center;
-  background: linear-gradient(rgba(134, 36, 22, 0.7), rgba(134, 36, 22, 0.7)), url("/assets/confence-2.jpeg") center center;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(134, 36, 22, 0.7)),
+      to(rgba(134, 36, 22, 0.7))
+    ),
+    url("/assets/confence-2.jpeg") center center;
+  background: linear-gradient(rgba(134, 36, 22, 0.7), rgba(134, 36, 22, 0.7)),
+    url("/assets/confence-2.jpeg") center center;
   background-size: cover;
   color: white;
   min-height: 40vh;
@@ -563,7 +593,7 @@ footer {
     padding-bottom: 1.5rem !important;
     background: #fff;
     -webkit-box-shadow: 0 4px 2px -2px #e6e6e6;
-            box-shadow: 0 4px 2px -2px #e6e6e6;
+    box-shadow: 0 4px 2px -2px #e6e6e6;
   }
   header nav .nav-links-container {
     display: -webkit-box;
@@ -582,6 +612,24 @@ footer {
     border: 3px solid #ec5242;
     padding: 1rem 1.5rem;
   }
+  header footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 20vh;
+    background: #e4eaed;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  header footer div {
+    padding: 0;
+  }
+  header footer div p {
+    padding-bottom: 1rem;
+  }
   header .hero-area {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -595,14 +643,14 @@ footer {
   }
   #program .program-grid {
     margin-top: 1.5rem;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr) [5];
+    grid-template-columns: repeat(5, 1fr);
   }
   #program .program-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
   }
   #program .program-content * {
@@ -614,8 +662,8 @@ footer {
     padding-bottom: 2rem;
   }
   #speakers .speaker-section {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
   }
   #speakers .speaker-section .speaker-card {
     padding: 0;
@@ -634,8 +682,8 @@ footer {
     padding-bottom: 3rem;
   }
   .partners div {
-    -ms-grid-columns: (minmax(186px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+    -ms-grid-columns: (minmax(186px, 1fr)) [auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
   }
   .tickets-table {
     padding-top: 3rem;
@@ -691,17 +739,13 @@ footer {
     max-width: 900px;
     margin: 2rem auto;
   }
-  div {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
   #venue {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
   #venue .grid-container {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
     font-size: 0.9rem;
   }
@@ -709,26 +753,8 @@ footer {
     width: 100%;
   }
   #past-events .grid-container {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
-  }
-  footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    height: 20vh;
-    background: #e4eaed;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer div {
-    padding: 0;
-  }
-  footer div p {
-    padding-bottom: 1rem;
   }
 }
