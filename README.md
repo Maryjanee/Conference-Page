@@ -6,13 +6,10 @@ This project was built for a ficticious conference organization following the de
 The website has 3 main pages, the home page, the about page and the tickets page.
 
 This project display understanding of the following concepts:
-
-Sass
-Bootstrap Framework
-Design and UX
-Floats and Positioning
-Flex and Grid
-Backgrounds
+- Sass
+- Design and UX
+- Flex and Grid
+- Backgrounds 
 
 ![screenshot](/assets/landing.png)
 ​​
