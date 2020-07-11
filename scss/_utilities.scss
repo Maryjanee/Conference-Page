@@ -93,12 +93,20 @@ p {
   justify-content: flex-end;
 }
 
+.align-start {
+  align-items: flex-start;
+}
+
 .align-center {
   align-items: center;
 }
 
 .align-end {
   align-items: flex-end;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .d-block {
@@ -143,8 +151,8 @@ p {
 }
 
 @mixin speakerImg {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   background-size: cover;
   border-radius: 50%;
 }
@@ -157,4 +165,10 @@ p {
 @mixin paddingbgTb {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+@mixin pastimg {
+  background-size: cover;
+  color: white;
+  min-height: 40vh;
 }

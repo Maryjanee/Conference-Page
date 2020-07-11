@@ -123,6 +123,12 @@ p {
           justify-content: flex-end;
 }
 
+.align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -133,6 +139,13 @@ p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .d-block {
@@ -273,91 +286,84 @@ header .date {
 }
 
 #speakers {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 #speakers .speaker-section {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  margin-bottom: 2rem;
+  grid-gap: 1rem;
 }
 
 #speakers .speaker-section .speaker-details {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 #speakers .speaker-section .img-1 {
   background: url(../assets/Alex-Foster.jpeg);
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   background-size: cover;
   border-radius: 50%;
 }
 
 #speakers .speaker-section .img-2 {
   background: url(../assets/Chaka-kann.jpg);
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   background-size: cover;
   border-radius: 50%;
 }
 
 #speakers .speaker-section .img-3 {
   background: url(../assets/Gwen-Steven.jpg);
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   background-size: cover;
   border-radius: 50%;
 }
 
 #speakers .speaker-section .img-4 {
   background: url(../assets/Hannah-Lann.jpeg);
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   background-size: cover;
   border-radius: 50%;
 }
 
 #speakers .speaker-section .img-5 {
   background: url(../assets/maria-delvin.jpg);
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   background-size: cover;
   border-radius: 50%;
 }
 
 #speakers .speaker-section .img-6 {
   background: url(../assets/steve-harris.jpg);
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   background-size: cover;
   border-radius: 50%;
 }
 
-#partners {
+.partners {
   background: #4d4d4e;
+  margin: 2rem 0 0 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-#partners div {
+.partners div {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   justify-items: center;
 }
 
-#partners img {
+.partners img {
   width: 10rem;
-}
-
-footer {
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-  background: #f2f2f2;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  grid-gap: 2rem;
 }
 
 .tickets-table {
@@ -489,22 +495,16 @@ footer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.5)), to(rgba(134, 36, 22, 0.5))), url("/assets/conference1.jpeg") center center;
   background: linear-gradient(rgba(134, 36, 22, 0.5), rgba(134, 36, 22, 0.5)), url("/assets/conference1.jpeg") center center;
   background-size: cover;
-  /* Here's the same styles we applied to our content-div earlier */
   color: white;
-  min-height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  min-height: 40vh;
+}
+
+#past-events .grid-container .past-img2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.5)), to(rgba(134, 36, 22, 0.5))), url("/assets/confence-2.jpeg") center center;
+  background: linear-gradient(rgba(134, 36, 22, 0.5), rgba(134, 36, 22, 0.5)), url("/assets/confence-2.jpeg") center center;
+  background-size: cover;
+  color: white;
+  min-height: 40vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -590,23 +590,26 @@ footer {
   #speakers .speaker-section {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4rem;
+  }
+  #speakers .speaker-section .speaker-card {
+    padding: 0;
+    width: 80%;
     margin-bottom: 2rem;
   }
-  #partners {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  #speakers .speaker-section .speaker-card figure {
+    margin-right: 1rem;
   }
-  #partners div {
+  #speakers .speaker-section .speaker-card .speaker-details {
+    width: 60%;
+    padding: 0;
+  }
+  .partners {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .partners div {
     -ms-grid-columns: (minmax(186px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
-  }
-  footer {
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
-  }
-  footer a {
-    padding-left: 4rem;
   }
   .tickets-table {
     padding-top: 3rem;

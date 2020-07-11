@@ -88,24 +88,29 @@
   #speakers {
     .speaker-section {
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 4rem;
-      margin-bottom: 2rem;
+
+      .speaker-card {
+        padding: 0;
+        width: 80%;
+        margin-bottom: 2rem;
+
+        figure {
+          margin-right: 1rem;
+        }
+
+        .speaker-details {
+          width: 60%;
+          padding: 0;
+        }
+      }
     }
   }
 
-  #partners {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .partners {
+    @include paddingbgTb;
 
     div {
       grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
-    }
-  }
-  footer {
-    grid-template-columns: 1fr 3fr;
-
-    a {
-      padding-left: 4rem;
     }
   }
 
@@ -187,8 +192,6 @@
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem;
       div {
-      
-        
       }
     }
   }

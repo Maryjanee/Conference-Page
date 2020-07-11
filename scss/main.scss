@@ -106,16 +106,14 @@ header {
 }
 
 #speakers {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  @include paddingsmTb;
 
   .speaker-section {
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    margin-bottom: 2rem;
+    grid-gap: 1rem;
 
     .speaker-details {
-      margin-left: 2rem;
+      margin-left: 1rem;
     }
 
     .img-1 {
@@ -156,8 +154,11 @@ header {
   }
 }
 
-#partners {
+.partners {
   background: $blacka;
+  margin: 2rem 0 0 0;
+
+  @include paddingsmTb;
 
   div {
     grid-template-columns: repeat(2, 1fr);
@@ -168,14 +169,6 @@ header {
   img {
     width: 10rem;
   }
-}
-
-footer {
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-  background: #f2f2f2;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
 }
 
 .tickets-table {
@@ -295,15 +288,15 @@ footer {
           rgba(134, 36, 22, 0.5)
         ),
         url("/assets/conference1.jpeg") center center;
-      background-size: cover;
-
-      /* Here's the same styles we applied to our content-div earlier */
-      color: white;
-      min-height: 50vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      @include pastimg;
+    }
+    .past-img2 {
+      background: linear-gradient(
+          rgba(134, 36, 22, 0.5),
+          rgba(134, 36, 22, 0.5)
+        ),
+        url("/assets/confence-2.jpeg") center center;
+      @include pastimg;
     }
   }
 }
