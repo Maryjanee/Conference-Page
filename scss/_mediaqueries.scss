@@ -116,6 +116,7 @@
 
   .tickets-table {
     @include paddingbgTb;
+
     div {
       @include paddingbgTb;
     }
@@ -125,7 +126,6 @@
 
     p {
       margin-top: 4rem;
-
       font-size: 0.9rem;
       width: 80%;
     }
@@ -142,18 +142,26 @@
 
   .lunch {
     @include paddingbgTb;
+
+    h3 {
+      padding-top: 0;
+      padding: 1rem;
+    }
   }
 
   .lunch-table {
+    padding-top: 0;
     max-width: 700px;
 
     input {
       margin-left: 0.4rem;
     }
   }
+
   .lunch button {
     width: 30%;
   }
+
   .about-heading {
     max-width: 700px;
     width: 100%;
@@ -170,12 +178,13 @@
     max-width: 900px;
     margin: 2rem auto;
   }
+
   div {
     @include paddingbgTb;
   }
 
   #venue {
-    @inlude paddingbgTb;
+    @include paddingbgTb;
 
     .grid-container {
       grid-template-columns: repeat(3, 1fr);
@@ -187,11 +196,27 @@
       width: 100%;
     }
   }
+
   #past-events {
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem;
-      div {
+    }
+  }
+
+  footer {
+    @include paddingbgTb;
+
+    height: 20vh;
+    border: 1px solid green;
+    background: $footer-grey;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    div {
+      padding: 0;
+      p {
+        padding-bottom: 1rem;
       }
     }
   }

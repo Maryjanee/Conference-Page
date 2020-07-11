@@ -366,6 +366,15 @@ header .date {
   width: 10rem;
 }
 
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: #f2f2f2;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
 .tickets-table {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -507,6 +516,15 @@ header .date {
   min-height: 40vh;
 }
 
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 30vh;
+  background: #e4eaed;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 6rem;
@@ -637,7 +655,12 @@ header .date {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+  .lunch h3 {
+    padding-top: 0;
+    padding: 1rem;
+  }
   .lunch-table {
+    padding-top: 0;
     max-width: 700px;
   }
   .lunch-table input {
@@ -666,7 +689,8 @@ header .date {
     padding-bottom: 3rem;
   }
   #venue {
-    @inlude paddingbgTb;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   #venue .grid-container {
     -ms-grid-columns: (1fr)[3];
@@ -681,5 +705,24 @@ header .date {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+  }
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 20vh;
+    border: 1px solid green;
+    background: #e4eaed;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div {
+    padding: 0;
+  }
+  footer div p {
+    padding-bottom: 1rem;
   }
 }
