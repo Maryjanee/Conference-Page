@@ -51,7 +51,7 @@
     }
 
     .hero-area {
-      padding-top: 8rem !important;
+      padding-top: 8rem;
       padding-bottom: 8rem;
     }
 
@@ -61,8 +61,7 @@
   }
 
   #program {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    @include paddingbgTb;
 
     .program-grid {
       margin-top: 1.5rem;
@@ -144,7 +143,6 @@
     @include paddingbgTb;
 
     h3 {
-      padding-top: 0;
       padding: 1rem;
     }
   }
@@ -208,7 +206,7 @@
     @include paddingbgTb;
 
     height: 20vh;
-    border: 1px solid green;
+
     background: $footer-grey;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;

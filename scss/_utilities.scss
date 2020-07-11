@@ -154,6 +154,8 @@ p {
   width: 7rem;
   height: 7rem;
   background-size: cover;
+  background-position: center;
+  background-origin: border-box;
   border-radius: 50%;
 }
 

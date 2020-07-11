@@ -34,8 +34,7 @@ header {
 
   .hero-area {
     width: 100%;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)),
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)),
       url("../assets/conference.jpg");
     background-position: center;
     background-size: cover;
@@ -67,8 +66,7 @@ header {
 }
 
 #program {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  @include paddingbgTb;
   background: url(../assets/sectionbg.png);
 
   .program-grid {
@@ -136,7 +134,7 @@ header {
     }
 
     .img-4 {
-      background: url(../assets/Hannah-Lann.jpeg);
+      background: url(../assets/emily-miles.jpg);
 
       @include speakerImg;
     }
@@ -174,10 +172,9 @@ header {
 
 footer {
   @include paddingsmTb;
-
-  background: #f2f2f2;
+  height: 30vh;
+  background: $footer-grey;
   grid-template-columns: 1fr;
-  grid-gap: 2rem;
 }
 
 .tickets-table {
@@ -293,28 +290,25 @@ footer {
     grid-gap: 2rem;
     div {
       background: linear-gradient(
-          rgba(134, 36, 22, 0.5),
-          rgba(134, 36, 22, 0.5)
+          rgba(134, 36, 22, 0.7),
+          rgba(134, 36, 22, 0.7)
         ),
         url("/assets/conference1.jpeg") center center;
       @include pastimg;
     }
     .past-img2 {
       background: linear-gradient(
-          rgba(134, 36, 22, 0.5),
-          rgba(134, 36, 22, 0.5)
+          rgba(134, 36, 22, 0.7),
+          rgba(134, 36, 22, 0.7)
         ),
         url("/assets/confence-2.jpeg") center center;
       @include pastimg;
     }
   }
-}
-
-footer {
-  @include paddingsmTb;
-  height: 30vh;
-  background: $footer-grey;
-  grid-template-columns: 1fr;
+  .year {
+    font-size: 3rem;
+    font-weight: 700;
+  }
 }
 
 @import "mediaqueries";

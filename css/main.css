@@ -305,6 +305,8 @@ header .date {
   width: 7rem;
   height: 7rem;
   background-size: cover;
+  background-position: center;
+  background-origin: border-box;
   border-radius: 50%;
 }
 
@@ -313,6 +315,8 @@ header .date {
   width: 7rem;
   height: 7rem;
   background-size: cover;
+  background-position: center;
+  background-origin: border-box;
   border-radius: 50%;
 }
 
@@ -321,14 +325,18 @@ header .date {
   width: 7rem;
   height: 7rem;
   background-size: cover;
+  background-position: center;
+  background-origin: border-box;
   border-radius: 50%;
 }
 
 #speakers .speaker-section .img-4 {
-  background: url(../assets/Hannah-Lann.jpeg);
+  background: url(../assets/emily-miles.jpg);
   width: 7rem;
   height: 7rem;
   background-size: cover;
+  background-position: center;
+  background-origin: border-box;
   border-radius: 50%;
 }
 
@@ -337,6 +345,8 @@ header .date {
   width: 7rem;
   height: 7rem;
   background-size: cover;
+  background-position: center;
+  background-origin: border-box;
   border-radius: 50%;
 }
 
@@ -345,6 +355,8 @@ header .date {
   width: 7rem;
   height: 7rem;
   background-size: cover;
+  background-position: center;
+  background-origin: border-box;
   border-radius: 50%;
 }
 
@@ -369,10 +381,10 @@ header .date {
 footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background: #f2f2f2;
+  height: 30vh;
+  background: #e4eaed;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 2rem;
 }
 
 .tickets-table {
@@ -501,28 +513,24 @@ footer {
 }
 
 #past-events .grid-container div {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.5)), to(rgba(134, 36, 22, 0.5))), url("/assets/conference1.jpeg") center center;
-  background: linear-gradient(rgba(134, 36, 22, 0.5), rgba(134, 36, 22, 0.5)), url("/assets/conference1.jpeg") center center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.7)), to(rgba(134, 36, 22, 0.7))), url("/assets/conference1.jpeg") center center;
+  background: linear-gradient(rgba(134, 36, 22, 0.7), rgba(134, 36, 22, 0.7)), url("/assets/conference1.jpeg") center center;
   background-size: cover;
   color: white;
   min-height: 40vh;
 }
 
 #past-events .grid-container .past-img2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.5)), to(rgba(134, 36, 22, 0.5))), url("/assets/confence-2.jpeg") center center;
-  background: linear-gradient(rgba(134, 36, 22, 0.5), rgba(134, 36, 22, 0.5)), url("/assets/confence-2.jpeg") center center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.7)), to(rgba(134, 36, 22, 0.7))), url("/assets/confence-2.jpeg") center center;
+  background: linear-gradient(rgba(134, 36, 22, 0.7), rgba(134, 36, 22, 0.7)), url("/assets/confence-2.jpeg") center center;
   background-size: cover;
   color: white;
   min-height: 40vh;
 }
 
-footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  height: 30vh;
-  background: #e4eaed;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+#past-events .year {
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
@@ -575,7 +583,7 @@ footer {
     padding: 1rem 1.5rem;
   }
   header .hero-area {
-    padding-top: 8rem !important;
+    padding-top: 8rem;
     padding-bottom: 8rem;
   }
   header .menu-icon-container {
@@ -656,7 +664,6 @@ footer {
     padding-bottom: 3rem;
   }
   .lunch h3 {
-    padding-top: 0;
     padding: 1rem;
   }
   .lunch-table {
@@ -710,7 +717,6 @@ footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
     height: 20vh;
-    border: 1px solid green;
     background: #e4eaed;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
