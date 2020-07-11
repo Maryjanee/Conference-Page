@@ -35,7 +35,10 @@ header {
   .hero-area {
     width: 100%;
     background:
-      linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)),
+      linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(50, 55, 100, 0.9)
+      ),
       url("../assets/conference.jpg");
     background-position: center;
     background-size: cover;
@@ -206,7 +209,9 @@ footer {
 
   height: 30vh;
   background: $footer-grey;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .tickets-table {

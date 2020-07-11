@@ -51,14 +51,6 @@
     }
 
     footer {
-      @include paddingbgTb;
-
-      height: 20vh;
-      background: $footer-grey;
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
-      align-items: center;
-
       div {
         padding: 0;
 
