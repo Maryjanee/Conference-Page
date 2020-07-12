@@ -32,7 +32,7 @@ This project display understanding of the following concepts:
 To get a local copy of the repository please run the following commands on your terminal:
 
 $ cd <folder>
-$ git clone git@github.com:Maryjanee/The-Newsweek-Clone.git
+$ git clone git@github.com:Maryjanee/Conference-Page.git
 ​
 
 ## Author
@@ -63,5 +63,5 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Cindy Shin on Behance
+- [Cindy Shin on Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 - Microverse

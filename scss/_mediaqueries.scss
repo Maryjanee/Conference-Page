@@ -34,7 +34,7 @@
         position: static;
         display: flex;
         flex-direction: row;
-        width: 55%;
+        width: 80%;
         font-size: 0.9rem;
         background: transparent;
 
@@ -46,9 +46,14 @@
           color: $red;
         }
 
+        .nav-links {
+          font-size: 0.8rem;
+        }
+
         .donate-link {
-          border: 3px solid $red;
-          padding: 1rem 1.5rem;
+          border: 2px solid $red;
+          padding: 0.8rem;
+          font-size: 0.8rem;
         }
 
         .closenav {
@@ -82,7 +87,7 @@
 
     .program-grid {
       margin-top: 1.5rem;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: (auto-fill, minmax(100px, 2fr));
     }
 
     .program-content {

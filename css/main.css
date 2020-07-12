@@ -607,7 +607,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 55%;
+    width: 80%;
     font-size: 0.9rem;
     background: transparent;
   }
@@ -617,9 +617,13 @@ footer {
   header nav .nav-links-container .active {
     color: #ec5242;
   }
+  header nav .nav-links-container .nav-links {
+    font-size: 0.8rem;
+  }
   header nav .nav-links-container .donate-link {
-    border: 3px solid #ec5242;
-    padding: 1rem 1.5rem;
+    border: 2px solid #ec5242;
+    padding: 0.8rem;
+    font-size: 0.8rem;
   }
   header nav .nav-links-container .closenav {
     display: none;
@@ -643,8 +647,8 @@ footer {
   }
   #program .program-grid {
     margin-top: 1.5rem;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: auto-fill, minmax(100px, 2fr);
+        grid-template-columns: auto-fill, minmax(100px, 2fr);
   }
   #program .program-content {
     -webkit-box-orient: vertical;
