@@ -1,0 +1,256 @@
+@media screen and(min-width: 768px) {
+  .container {
+    padding: 0 6rem;
+  }
+
+  header {
+    @include textfont;
+
+    .logo {
+      font-family: $logo-font;
+      font-size: $padding-size;
+      color: $black;
+    }
+
+    .nav-social-links {
+      display: flex;
+      background: $black;
+      padding-top: $font-size;
+      padding-bottom: $font-size;
+
+      .social-links {
+        margin-left: 1.5rem;
+        color: $white;
+      }
+    }
+
+    nav {
+      padding-top: $padding-size;
+      padding-bottom: $padding-size;
+      background: $white;
+      box-shadow: 0 4px 2px -2px #e6e6e6;
+
+      .nav-links-container {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        font-size: 0.9rem;
+        background: transparent;
+
+        a {
+          color: $black;
+        }
+
+        .active {
+          color: $red;
+        }
+
+        .nav-links {
+          font-size: $font-size;
+        }
+
+        .donate-link {
+          border: 2px solid $red;
+          padding: $font-size;
+          font-size: $font-size;
+        }
+
+        .closenav {
+          display: none;
+        }
+      }
+    }
+
+    footer {
+      div {
+        padding: 0;
+
+        p {
+          padding-bottom: $main-font;
+        }
+      }
+    }
+
+    .hero-area {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+
+      .description {
+        font-size: 1.2rem;
+      }
+    }
+
+    .menu-icon-container {
+      display: none;
+    }
+  }
+
+  #program {
+    @include paddingbgTb;
+
+    .program-grid {
+      margin-top: $padding-size;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .program-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .program-content * {
+      margin: $main-font auto;
+    }
+
+    a {
+      background: transparent;
+      text-decoration: underline;
+      padding-bottom: 2rem;
+    }
+  }
+
+  #speakers {
+    .speaker-section {
+      grid-template-columns: repeat(2, 1fr);
+
+      .speaker-card {
+        padding: 0;
+        width: 80%;
+        margin-bottom: 2rem;
+
+        figure {
+          margin-right: $main-font;
+        }
+
+        .speaker-details {
+          width: 60%;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .partners {
+    @include paddingbgTb;
+
+    div {
+      grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+      grid-gap: 2rem;
+    }
+  }
+
+  .tickets-table {
+    @include paddingbgTb;
+
+    div {
+      @include paddingbgTb;
+    }
+
+    height: 80vh;
+    background: $dark-grey;
+
+    p {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      width: 80%;
+    }
+  }
+
+  table {
+    max-width: 700px;
+
+    td:nth-child(1),
+    th,
+    .date th {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: $blacka;
+    }
+
+    td:not(:first-child) {
+      color: $red;
+      font-size: 1.2rem;
+    }
+
+    .table-heading {
+      th {
+        font-size: $font-size;
+      }
+    }
+  }
+
+  .lunch {
+    @include paddingbgTb;
+
+    h3 {
+      padding: 1rem $main-font;
+    }
+  }
+
+  .lunch-table {
+    padding-top: 0;
+    max-width: 700px;
+
+    input {
+      margin-left: 0.4rem;
+    }
+  }
+
+  .lunch button {
+    width: 30%;
+  }
+
+  .about-heading {
+    max-width: 700px;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .more-info {
+    @include paddingbgTb;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+
+  #venue {
+    @include paddingbgTb;
+
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+      font-size: 0.9rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  #past-events {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+  }
+
+  .step {
+    padding-top: $main-font;
+    padding-bottom: $main-font;
+    border: 1px solid #bfbfbf;
+    border-radius: 5rem;
+    font-size: $main-font;
+    width: 100%;
+    max-width: 400px;
+
+    span {
+      margin-left: 0.5rem;
+      color: $black;
+    }
+  }
+}

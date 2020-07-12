@@ -1,0 +1,754 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1rem;
+}
+
+.container {
+  padding: 0 2rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  color: #272a31;
+}
+
+.active {
+  color: #ec5242;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-red {
+  color: #ec5242;
+}
+
+.text-black {
+  color: #272a31;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-red {
+  background: #ec5242;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.social-icons {
+  display: block;
+  width: 1.2rem;
+}
+
+.place-center {
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.align-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.d-block {
+  display: block;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+}
+
+.section-line {
+  display: block;
+  width: 5%;
+  margin: 0 auto 1rem auto;
+  border: 1px solid #ec5242;
+}
+
+header .nav-social-links {
+  display: none;
+}
+
+header nav {
+  padding: 4rem;
+}
+
+header nav .nav-social-links {
+  display: none;
+}
+
+header .nav-links-container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #c2d6d6;
+}
+
+header .nav-links-container * {
+  margin: 2.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+header .closenav {
+  width: 1.2rem;
+  position: absolute;
+  right: 3rem;
+  top: 0.1rem;
+}
+
+header .menu-icon-container {
+  width: 1.5rem;
+}
+
+header .seminar-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333));
+  background: linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 2rem 0;
+  width: 95%;
+}
+
+header .hero-area {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(50, 55, 100, 0.9))), url("../assets/conference.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 55, 100, 0.9)), url("../assets/conference.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+header .hero-area h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+header .hero-area .description {
+  font-size: 1.1rem;
+  width: 70%;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+header .date {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.lunch {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.lunch-table {
+  border: 1px solid #dfdfdf;
+  margin: 4rem auto;
+}
+
+.lunch-table input {
+  margin-left: 0.4rem;
+}
+
+.lunch-table h3 {
+  background: #f6f6f6;
+}
+
+.lunch-table div {
+  padding: 1rem;
+}
+
+.lunch button {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+#program {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: url(../assets/sectionbg.png);
+}
+
+#program .program-grid {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#program h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+#program .program-content {
+  background: #4d4d4e;
+  padding: 1rem;
+}
+
+#program .program-content h3 {
+  color: #ec5242;
+}
+
+#program .program-content * {
+  margin-right: 2rem;
+}
+
+#program a {
+  display: block;
+  background: #ec5242;
+  width: 70%;
+  padding: 1rem 1.5rem;
+}
+
+.program-icons {
+  width: 3rem;
+}
+
+#speakers {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#speakers .speaker-section {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+#speakers .speaker-section .speaker-card {
+  width: 100%;
+}
+
+#speakers .speaker-section .speaker-details {
+  margin-left: 1rem;
+}
+
+#speakers .speaker-section .img-1 {
+  background: url(../assets/Alex-Foster.jpeg);
+}
+
+#speakers .speaker-section .img-2 {
+  background: url(../assets/Chaka-kann.jpg);
+}
+
+#speakers .speaker-section .img-3 {
+  background: url(../assets/Gwen-Steven.jpg);
+}
+
+#speakers .speaker-section .img-4 {
+  background: url(../assets/emily-miles.jpg);
+}
+
+#speakers .speaker-section .img-5 {
+  background: url(../assets/maria-delvin.jpg);
+}
+
+#speakers .speaker-section .img-6 {
+  background: url(../assets/steve-harris.jpg);
+}
+
+#speakers .speaker-section .speaker-img {
+  width: 7rem;
+  height: 7rem;
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  border-radius: 50%;
+}
+
+.partners {
+  background: #4d4d4e;
+  margin: 2rem 0 0 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.partners div {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+}
+
+.partners img {
+  width: 10rem;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 30vh;
+  background: #e4eaed;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.tickets-table {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 70vh;
+  background: #dfdfdf;
+}
+
+.tickets-table div {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tickets-table table {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.tickets-table table input {
+  display: block;
+  margin: 0.4rem auto;
+}
+
+.tickets-table table th,
+.tickets-table table td {
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.tickets-table table tr {
+  background: #fff;
+}
+
+.tickets-table table td:not(:first-child) {
+  color: #ec5242;
+  font-size: 0.8rem;
+}
+
+.tickets-table table .table-heading {
+  background: #dfdfdf;
+}
+
+.tickets-table .border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+
+.tickets-table .border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.about-heading {
+  width: 100%;
+}
+
+.more-info {
+  background: #f7f7f7;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.more-info .about-content {
+  padding: 2rem;
+  line-height: 2rem;
+  color: #4d4d4e;
+}
+
+.more-info div {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#venue {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#venue .grid-container {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+#venue img {
+  margin: 0.8rem 0;
+}
+
+#venue a {
+  margin: 1rem 0;
+}
+
+#past-events .grid-container {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+#past-events .grid-container div {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.7)), to(rgba(134, 36, 22, 0.7))), url("/assets/conference1.jpeg") center center;
+  background: linear-gradient(rgba(134, 36, 22, 0.7), rgba(134, 36, 22, 0.7)), url("/assets/conference1.jpeg") center center;
+  background-size: cover;
+  color: white;
+  min-height: 40vh;
+}
+
+#past-events .grid-container .past-img2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 36, 22, 0.7)), to(rgba(134, 36, 22, 0.7))), url("/assets/confence-2.jpeg") center center;
+  background: linear-gradient(rgba(134, 36, 22, 0.7), rgba(134, 36, 22, 0.7)), url("/assets/confence-2.jpeg") center center;
+  background-size: cover;
+  color: white;
+  min-height: 40vh;
+}
+
+#past-events .year {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 6rem;
+  }
+  header {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+  }
+  header .logo {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+    color: #272a31;
+  }
+  header .nav-social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #272a31;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  header .nav-social-links .social-links {
+    margin-left: 1.5rem;
+    color: #fff;
+  }
+  header nav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 2px -2px #e6e6e6;
+            box-shadow: 0 4px 2px -2px #e6e6e6;
+  }
+  header nav .nav-links-container {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    font-size: 0.9rem;
+    background: transparent;
+  }
+  header nav .nav-links-container a {
+    color: #272a31;
+  }
+  header nav .nav-links-container .active {
+    color: #ec5242;
+  }
+  header nav .nav-links-container .nav-links {
+    font-size: 0.8rem;
+  }
+  header nav .nav-links-container .donate-link {
+    border: 2px solid #ec5242;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+  header nav .nav-links-container .closenav {
+    display: none;
+  }
+  header footer div {
+    padding: 0;
+  }
+  header footer div p {
+    padding-bottom: 1rem;
+  }
+  header .hero-area {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  header .hero-area .description {
+    font-size: 1.2rem;
+  }
+  header .menu-icon-container {
+    display: none;
+  }
+  #program {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  #program .program-grid {
+    margin-top: 1.5rem;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+  #program .program-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #program .program-content * {
+    margin: 1rem auto;
+  }
+  #program a {
+    background: transparent;
+    text-decoration: underline;
+    padding-bottom: 2rem;
+  }
+  #speakers .speaker-section {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #speakers .speaker-section .speaker-card {
+    padding: 0;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  #speakers .speaker-section .speaker-card figure {
+    margin-right: 1rem;
+  }
+  #speakers .speaker-section .speaker-card .speaker-details {
+    width: 60%;
+    padding: 0;
+  }
+  .partners {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .partners div {
+    -ms-grid-columns: (minmax(186px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+    grid-gap: 2rem;
+  }
+  .tickets-table {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 80vh;
+    background: #d3d3d3;
+  }
+  .tickets-table div {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .tickets-table p {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    width: 80%;
+  }
+  table {
+    max-width: 700px;
+  }
+  table td:nth-child(1),
+  table th,
+  table .date th {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #4d4d4e;
+  }
+  table td:not(:first-child) {
+    color: #ec5242;
+    font-size: 1.2rem;
+  }
+  table .table-heading th {
+    font-size: 0.8rem;
+  }
+  .lunch {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .lunch h3 {
+    padding: 1rem 1rem;
+  }
+  .lunch-table {
+    padding-top: 0;
+    max-width: 700px;
+  }
+  .lunch-table input {
+    margin-left: 0.4rem;
+  }
+  .lunch button {
+    width: 30%;
+  }
+  .about-heading {
+    max-width: 700px;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .more-info {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .about-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  #venue {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  #venue .grid-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    font-size: 0.9rem;
+  }
+  #venue img {
+    width: 100%;
+  }
+  #past-events .grid-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .step {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid #bfbfbf;
+    border-radius: 5rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  .step span {
+    margin-left: 0.5rem;
+    color: #272a31;
+  }
+}

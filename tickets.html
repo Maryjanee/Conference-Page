@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tek Xperts Conference</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <ul
+        class="container nav-social-links flex-container justify-end align-center"
+      >
+        <li>
+          <a href="#" class="social-icons"
+            ><img src="assets/facebook.svg" alt="facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="social-icons social-links"
+            ><img src="assets/twitter.svg" alt="twitter"
+          /></a>
+        </li>
+        <li><a class="social-links" href="#">English</a></li>
+        <li><a class="social-links" href="#">My Page</a></li>
+        <li><a class="social-links" href="#">Logout</a></li>
+      </ul>
+
+      <nav class="container flex-container justify-space-between align-center">
+        <a href="#" class="logo">
+          Tek Xperts
+        </a>
+        <ul
+          class="nav-links-container flex-container justify-space-between align-center"
+        >
+          <li><img class="closenav" src="assets/closenav.svg" alt="" /></li>
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="about.html" class="nav-links">About</a></li>
+          <li>
+            <a href="tickets.html" class="nav-links active">Get Tickets</a>
+          </li>
+          <li><a href="about.html" class="nav-links">Contact Us</a></li>
+          <li><a class="donate-link" href="">Donate</a></li>
+        </ul>
+
+        <div class="menu-icon-container">
+          <img class="menu" src="assets/menu.svg" alt="menu-icon" />
+        </div>
+      </nav>
+    </header>
+    <section class="tickets-table container">
+      <h1 class="text-center">Get Tickets</h1>
+      <span class="section-line"></span>
+
+      <p class="step text-red place-center text-center">
+        Step 1: <span>Please select a day you want to join the seminar</span>
+      </p>
+      <div>
+        <table class="border-gradient border-gradient-purple place-center">
+          <tr class="table-heading">
+            <th>Tickets</th>
+            <th>1-Day Ticket</th>
+            <th colspan="2">2-Day Ticket</th>
+            <th>Partners Ticket</th>
+          </tr>
+          <tr class="date">
+            <th>Date</th>
+            <th>15th July(Fri)</th>
+            <th>16th July(Fri)</th>
+            <th>15th-16th July</th>
+            <th>15th-16th July</th>
+          </tr>
+          <tr>
+            <td>Regular</td>
+            <td>
+              #20000
+              <input
+                type="radio"
+                id="regular1"
+                name="regular1"
+                value="#20000"
+              />
+            </td>
+
+            <td>
+              #30000
+              <input
+                type="radio"
+                id="regular2"
+                name="regular2"
+                value="#30000"
+              />
+            </td>
+
+            <td>
+              #40000
+              <input
+                type="radio"
+                id="regular3"
+                name="regular3"
+                value="#40000"
+              />
+             
+            </td>
+
+            <td>0<input type="radio" name="gender" value="#0" /></td>
+          </tr>
+          <tr>
+            <td>Executive</td>
+            <td>
+              #30000
+              <input
+                type="radio"
+                id="executive1"
+                name="executive1"
+                value="#20000"
+              />
+            </td>
+
+            <td>
+              #40000
+              <input
+                type="radio"
+                id="executive2"
+                name="executive2"
+                value="#30000"
+              />
+            </td>
+
+            <td>
+              #40000
+              <input
+                type="radio"
+                id="executive3"
+                name="executive3"
+                value="#40000"
+              />
+              
+            </td>
+
+            <td>0<input type="radio" name="executive4" value="#0" /></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="container lunch">
+      <h2 class="text-center">Select Your Lunch</h2>
+      <span class="section-line"></span>
+      <p class="step text-red place-center text-center">
+        Step 2: <span>Please select your lunch at the event</span>
+      </p>
+      <div class="lunch-table place-center">
+        <h3 class="text-center">Main course</h3>
+        <div class="flex-container justify-space-between align-center">
+          <p>
+            Fried Rice<input
+              type="radio"
+              id="friedrice"
+              name="friedrice"
+              value="#40000"
+            />
+          </p>
+          <p>
+            Jollof Rice<input
+              type="radio"
+              id="jollof"
+              name="jollof"
+              value="#40000"
+            />
+          </p>
+          <p>
+            Egusi And Semo<input
+              type="radio"
+              id="egusi"
+              name="egusi"
+              value="#40000"
+            />
+          </p>
+        </div>
+      </div>
+
+      <div class="lunch-table place-center">
+        <h3 class="text-center">Snacks</h3>
+        <div class="flex-container justify-space-between align-center">
+          <p>
+            Empanadas<input
+              type="radio"
+              id="empanadas"
+              name="empanadas"
+              value="empanadas"
+            />
+          </p>
+          <p>
+            Red Velvet Cake<input
+              type="radio"
+              id="rvc"
+              name="rvc"
+              value="rvc"
+            />
+          </p>
+          <p>
+            Chicken Pie<input type="radio" id="pie" name="pie" value="pie" />
+          </p>
+        </div>
+      </div>
+
+      <button type="button" class="place-center bg-red text-white">
+        Purchase Ticket
+      </button>
+    </section>
+
+    <footer class="container grid-container">
+      <a href="#" class="logo">
+        Tek Xperts
+      </a>
+      <div>
+        <p>2020 Tek Xperts Concept. All Rights Reservered</p>
+        <p>
+          All enquires and correspondence should be directed to the contact
+          address show on the contact form aand not two any third party
+          affiliate
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

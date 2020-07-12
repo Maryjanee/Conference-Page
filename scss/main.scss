@@ -1,0 +1,364 @@
+@import "resets";
+@import "variables";
+@import "utilities";
+
+header {
+  .nav-social-links {
+    display: $d-none;
+  }
+
+  nav {
+    .nav-social-links {
+      display: $d-none;
+    }
+
+    padding: 4rem;
+  }
+
+  .nav-links-container {
+    display: $d-none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #c2d6d6;
+  }
+
+  .nav-links-container * {
+    margin: 2.5rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .closenav {
+    width: 1.2rem;
+    position: absolute;
+    right: 3rem;
+    top: 0.1rem;
+  }
+
+  .menu-icon-container {
+    width: $padding-size;
+  }
+
+  .seminar-title {
+    @include headingfont;
+
+    font-size: 3.5rem;
+    background: linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 2rem 0;
+    width: 95%;
+  }
+
+  .hero-area {
+    width: 100%;
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(50, 55, 100, 0.9)
+      ),
+      url("../assets/conference.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $white;
+
+    @include paddingbgTb;
+
+    h1 {
+      @include textfont;
+
+      font-size: $padding-size;
+      letter-spacing: 2px;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      width: 70%;
+      margin-bottom: 4rem;
+      color: $white;
+    }
+  }
+
+  .date {
+    @include headingfont;
+
+    font-size: 2rem;
+  }
+}
+
+.lunch {
+  @include paddingsmTb;
+}
+
+.lunch-table {
+  border: 1px solid $table-grey;
+  margin: 4rem auto;
+
+  input {
+    margin-left: 0.4rem;
+  }
+
+  h3 {
+    background: $table-top;
+  }
+
+  div {
+    padding: 1rem;
+  }
+}
+
+.lunch button {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: $main-font;
+  font-size: $main-font;
+}
+
+#program {
+  @include paddingbgTb;
+
+  background: url(../assets/sectionbg.png);
+
+  .program-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    @include textfont;
+  }
+
+  .program-content {
+    background: $blacka;
+    padding: $main-font;
+
+    h3 {
+      color: $red;
+    }
+  }
+
+  .program-content * {
+    margin-right: 2rem;
+  }
+
+  a {
+    display: block;
+    background: $red;
+    width: 70%;
+    padding: $main-font $padding-size;
+  }
+}
+
+.program-icons {
+  width: 3rem;
+}
+
+#speakers {
+  @include paddingsmTb;
+
+  .speaker-section {
+    grid-template-columns: 1fr;
+    grid-gap: $main-font;
+
+    .speaker-card {
+      width: 100%;
+    }
+
+    .speaker-details {
+      margin-left: $main-font;
+    }
+
+    .img-1 {
+      background: url(../assets/Alex-Foster.jpeg);
+    }
+
+    .img-2 {
+      background: url(../assets/Chaka-kann.jpg);
+    }
+
+    .img-3 {
+      background: url(../assets/Gwen-Steven.jpg);
+    }
+
+    .img-4 {
+      background: url(../assets/emily-miles.jpg);
+    }
+
+    .img-5 {
+      background: url(../assets/maria-delvin.jpg);
+    }
+
+    .img-6 {
+      background: url(../assets/steve-harris.jpg);
+    }
+
+    .speaker-img {
+      width: 7rem;
+      height: 7rem;
+      background-size: cover;
+      background-position: center;
+      background-origin: border-box;
+      border-radius: 50%;
+    }
+  }
+}
+
+.partners {
+  background: $blacka;
+  margin: 2rem 0 0 0;
+
+  @include paddingsmTb;
+
+  div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+  }
+
+  img {
+    width: 10rem;
+  }
+}
+
+footer {
+  @include paddingsmTb;
+
+  height: 30vh;
+  background: $footer-grey;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.tickets-table {
+  @include paddingsmTb;
+
+  height: 70vh;
+  background: $table-grey;
+
+  div {
+    @include paddingsmTb;
+  }
+
+  table {
+    margin-top: $main-font;
+    width: 100%;
+
+    input {
+      display: block;
+      margin: 0.4rem auto;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid $border-grey;
+      border-right: 1px solid $border-grey;
+      padding: 0.5rem;
+      font-size: 0.7rem;
+      text-align: center;
+    }
+
+    tr {
+      background: $white;
+    }
+
+    td:not(:first-child) {
+      color: $red;
+      font-size: $font-size;
+    }
+
+    .table-heading {
+      background: $table-grey;
+    }
+  }
+
+  .border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+  }
+
+  .border-gradient-purple {
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  }
+}
+
+.about-heading {
+  width: 100%;
+}
+
+.more-info {
+  background: $grey;
+
+  @include paddingsmTb;
+
+  .about-content {
+    padding: 2rem;
+    line-height: 2rem;
+    color: $blacka;
+  }
+
+  div {
+    @include paddingsmTb;
+  }
+}
+
+#venue {
+  @include paddingsmTb;
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  img {
+    margin: $font-size 0;
+  }
+
+  a {
+    margin: $main-font 0;
+  }
+}
+
+#past-events {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    div {
+      background:
+        linear-gradient(
+          rgba(134, 36, 22, 0.7),
+          rgba(134, 36, 22, 0.7)
+        ),
+        url("/assets/conference1.jpeg") center center;
+
+      @include pastimg;
+    }
+
+    .past-img2 {
+      background:
+        linear-gradient(
+          rgba(134, 36, 22, 0.7),
+          rgba(134, 36, 22, 0.7)
+        ),
+        url("/assets/confence-2.jpeg") center center;
+
+      @include pastimg;
+    }
+  }
+
+  .year {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
+
+@import "mediaqueries";

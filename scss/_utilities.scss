@@ -1,0 +1,152 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1rem;
+}
+
+.container {
+  padding: 0 2rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  font-family: $logo-font;
+  font-size: 1.8rem;
+  color: $black;
+}
+
+.active {
+  color: $red;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-red {
+  color: $red;
+}
+
+.text-black {
+  color: $black;
+}
+
+.bg-white {
+  background: $white;
+}
+
+.bg-red {
+  background: $red;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.social-icons {
+  display: block;
+  width: 1.2rem;
+}
+
+.place-center {
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.d-block {
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.section-line {
+  display: block;
+  width: 5%;
+  margin: 0 auto 1rem auto;
+  border: 1px solid $red;
+}
+
+@mixin textfont {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+@mixin headingfont {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin paddingsmTb {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@mixin paddingbgTb {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@mixin pastimg {
+  background-size: cover;
+  color: white;
+  min-height: 40vh;
+}
