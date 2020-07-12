@@ -25,15 +25,18 @@
     }
 
     nav {
-      padding-top: 1.5rem !important;
-      padding-bottom: 1.5rem !important;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
       background: $white;
       box-shadow: 0 4px 2px -2px #e6e6e6;
 
       .nav-links-container {
+        position: static;
         display: flex;
+        flex-direction: row;
         width: 55%;
         font-size: 0.9rem;
+        background: transparent;
 
         a {
           color: $black;
@@ -46,6 +49,10 @@
         .donate-link {
           border: 3px solid $red;
           padding: 1rem 1.5rem;
+        }
+
+        .closenav {
+          display: none;
         }
       }
     }

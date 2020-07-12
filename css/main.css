@@ -187,9 +187,34 @@ header nav {
   padding: 4rem;
 }
 
-header nav .nav-social-links,
-header nav .nav-links-container {
+header nav .nav-social-links {
   display: none;
+}
+
+header .nav-links-container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #c2d6d6;
+}
+
+header .nav-links-container * {
+  margin: 2.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+header .closenav {
+  width: 1.2rem;
+  position: absolute;
+  right: 3rem;
+  top: 0.1rem;
 }
 
 header .menu-icon-container {
@@ -563,18 +588,24 @@ footer {
     color: #fff;
   }
   header nav {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     background: #fff;
     -webkit-box-shadow: 0 4px 2px -2px #e6e6e6;
             box-shadow: 0 4px 2px -2px #e6e6e6;
   }
   header nav .nav-links-container {
+    position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 55%;
     font-size: 0.9rem;
+    background: transparent;
   }
   header nav .nav-links-container a {
     color: #272a31;
@@ -585,6 +616,9 @@ footer {
   header nav .nav-links-container .donate-link {
     border: 3px solid #ec5242;
     padding: 1rem 1.5rem;
+  }
+  header nav .nav-links-container .closenav {
+    display: none;
   }
   header footer div {
     padding: 0;

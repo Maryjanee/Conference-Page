@@ -8,12 +8,34 @@ header {
   }
 
   nav {
-    .nav-social-links,
-    .nav-links-container {
+    .nav-social-links {
       display: none;
     }
 
     padding: 4rem;
+  }
+
+  .nav-links-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #c2d6d6;
+  }
+
+  .nav-links-container * {
+    margin: 2.5rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .closenav {
+    width: 1.2rem;
+    position: absolute;
+    right: 3rem;
+    top: 0.1rem;
   }
 
   .menu-icon-container {
