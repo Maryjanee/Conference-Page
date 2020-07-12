@@ -584,8 +584,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     background: #272a31;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
   }
   header .nav-social-links .social-links {
     margin-left: 1.5rem;
@@ -647,8 +647,8 @@ footer {
   }
   #program .program-grid {
     margin-top: 1.5rem;
-    -ms-grid-columns: auto-fill, minmax(100px, 2fr);
-        grid-template-columns: auto-fill, minmax(100px, 2fr);
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
   }
   #program .program-content {
     -webkit-box-orient: vertical;
@@ -706,10 +706,6 @@ footer {
   }
   table {
     max-width: 1000px;
-  }
-  tr,
-  th {
-    padding: 100rem;
   }
   .lunch {
     padding-top: 3rem;

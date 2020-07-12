@@ -8,15 +8,15 @@
 
     .logo {
       font-family: $logo-font;
-      font-size: 1.5rem;
+      font-size: $padding-size;
       color: $black;
     }
 
     .nav-social-links {
       display: flex;
       background: $black;
-      padding-top: 0.7rem;
-      padding-bottom: 0.7rem;
+      padding-top: $font-size;
+      padding-bottom: $font-size;
 
       .social-links {
         margin-left: 1.5rem;
@@ -25,8 +25,8 @@
     }
 
     nav {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
+      padding-top: $padding-size;
+      padding-bottom: $padding-size;
       background: $white;
       box-shadow: 0 4px 2px -2px #e6e6e6;
 
@@ -47,13 +47,13 @@
         }
 
         .nav-links {
-          font-size: 0.8rem;
+          font-size: $font-size;
         }
 
         .donate-link {
           border: 2px solid $red;
-          padding: 0.8rem;
-          font-size: 0.8rem;
+          padding: $font-size;
+          font-size: $font-size;
         }
 
         .closenav {
@@ -86,8 +86,8 @@
     @include paddingbgTb;
 
     .program-grid {
-      margin-top: 1.5rem;
-      grid-template-columns: (auto-fill, minmax(100px, 2fr));
+      margin-top: $padding-size;
+      grid-template-columns: repeat(5, 1fr);
     }
 
     .program-content {
@@ -154,11 +154,6 @@
 
   table {
     max-width: 1000px;
-  }
-
-  tr,
-  th {
-    padding: 100rem;
   }
 
   .lunch {

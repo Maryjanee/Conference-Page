@@ -4,19 +4,19 @@
 
 header {
   .nav-social-links {
-    display: none;
+    display: $d-none;
   }
 
   nav {
     .nav-social-links {
-      display: none;
+      display: $d-none;
     }
 
     padding: 4rem;
   }
 
   .nav-links-container {
-    display: none;
+    display: $d-none;
     flex-direction: column;
     position: absolute;
     top: 0;
@@ -39,7 +39,7 @@ header {
   }
 
   .menu-icon-container {
-    width: 1.5rem;
+    width: $padding-size;
   }
 
   .seminar-title {
@@ -66,13 +66,13 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     color: $white;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+
+    @include paddingbgTb;
 
     h1 {
       @include textfont;
 
-      font-size: 1.5rem;
+      font-size: $padding-size;
       letter-spacing: 2px;
     }
 
@@ -152,7 +152,7 @@ header {
     display: block;
     background: $red;
     width: 70%;
-    padding: 1rem 1.5rem;
+    padding: 1rem $padding-size;
   }
 }
 
@@ -270,8 +270,8 @@ footer {
 
   th,
   td {
-    border-bottom: 1px solid #efefef;
-    border-right: 1px solid #efefef;
+    border-bottom: 1px solid $border-grey;
+    border-right: 1px solid $border-grey;
     padding: 0.5rem;
     font-size: 0.7rem;
     text-align: center;
@@ -317,7 +317,7 @@ footer {
   }
 
   img {
-    margin: 0.8rem 0;
+    margin: $font-size 0;
   }
 
   a {
