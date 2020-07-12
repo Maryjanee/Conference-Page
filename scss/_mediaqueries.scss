@@ -132,6 +132,7 @@
 
     div {
       grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+      grid-gap: 2rem;
     }
   }
 

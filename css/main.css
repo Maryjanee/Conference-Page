@@ -387,7 +387,7 @@ header .date {
 .partners div {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   justify-items: center;
 }
 
@@ -651,6 +651,7 @@ footer {
   .partners div {
     -ms-grid-columns: (minmax(186px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+    grid-gap: 2rem;
   }
   .tickets-table {
     padding-top: 3rem;
