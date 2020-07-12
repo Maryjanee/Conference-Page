@@ -3,7 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: lato, sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 li {
@@ -427,24 +427,29 @@ footer {
 
 .tickets-table table input {
   display: block;
-  margin: .4rem auto;
+  margin: 0.4rem auto;
+}
+
+.tickets-table table th,
+.tickets-table table td {
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  text-align: center;
 }
 
 .tickets-table table tr {
   background: #fff;
 }
 
-.tickets-table table .table-heading {
-  background: #dfdfdf;
+.tickets-table table td:not(:first-child) {
+  color: #ec5242;
+  font-size: 0.8rem;
 }
 
-.tickets-table th,
-.tickets-table td {
-  border-bottom: 1px solid #efefef;
-  border-right: 1px solid #efefef;
-  padding: 0.5rem;
-  font-size: 0.7rem;
-  text-align: center;
+.tickets-table table .table-heading {
+  background: #dfdfdf;
 }
 
 .tickets-table .border-gradient {
@@ -665,11 +670,9 @@ footer {
   table {
     max-width: 700px;
   }
-  table .table-heading th {
-    font-size: 0.8rem;
-  }
   table td:nth-child(1),
-  table th, table .date th {
+  table th,
+  table .date th {
     font-size: 0.9rem;
     font-weight: 300;
     color: #4d4d4e;
@@ -677,6 +680,9 @@ footer {
   table td:not(:first-child) {
     color: #ec5242;
     font-size: 1.2rem;
+  }
+  table .table-heading th {
+    font-size: 0.8rem;
   }
   .lunch {
     padding-top: 3rem;

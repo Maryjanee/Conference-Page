@@ -154,14 +154,10 @@
 
   table {
     max-width: 700px;
-    .table-heading {
-      th {
-        font-size: $font-size;
-      }
-    }
-    
+
     td:nth-child(1),
-    th, .date th {
+    th,
+    .date th {
       font-size: 0.9rem;
       font-weight: 300;
       color: $blacka;
@@ -170,6 +166,12 @@
     td:not(:first-child) {
       color: $red;
       font-size: 1.2rem;
+    }
+
+    .table-heading {
+      th {
+        font-size: $font-size;
+      }
     }
   }
 

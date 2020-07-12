@@ -201,11 +201,11 @@ header {
 
     .speaker-img {
       width: 7rem;
-     height: 7rem;
-     background-size: cover;
-     background-position: center;
-     background-origin: border-box;
-     border-radius: 50%;
+      height: 7rem;
+      background-size: cover;
+      background-position: center;
+      background-origin: border-box;
+      border-radius: 50%;
     }
   }
 }
@@ -250,28 +250,33 @@ footer {
   table {
     margin-top: $main-font;
     width: 100%;
-    
+
     input {
       display: block;
-      margin: .4rem auto;
+      margin: 0.4rem auto;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid $border-grey;
+      border-right: 1px solid $border-grey;
+      padding: 0.5rem;
+      font-size: 0.7rem;
+      text-align: center;
     }
 
     tr {
       background: $white;
     }
 
+    td:not(:first-child) {
+      color: $red;
+      font-size: $font-size;
+    }
+
     .table-heading {
       background: $table-grey;
     }
-  }
-
-  th,
-  td {
-    border-bottom: 1px solid $border-grey;
-    border-right: 1px solid $border-grey;
-    padding: 0.5rem;
-    font-size: 0.7rem;
-    text-align: center;
   }
 
   .border-gradient {
