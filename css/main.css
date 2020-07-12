@@ -359,64 +359,37 @@ header .date {
   margin-left: 1rem;
 }
 
-#speakers .speaker-section .img-1 {
-  background: url(../assets/Alex-Foster.jpeg);
+#speakers .speaker-section .speaker-img {
   width: 7rem;
   height: 7rem;
   background-size: cover;
   background-position: center;
   background-origin: border-box;
   border-radius: 50%;
+}
+
+#speakers .speaker-section .img-1 {
+  background: url(../assets/Alex-Foster.jpeg);
 }
 
 #speakers .speaker-section .img-2 {
   background: url(../assets/Chaka-kann.jpg);
-  width: 7rem;
-  height: 7rem;
-  background-size: cover;
-  background-position: center;
-  background-origin: border-box;
-  border-radius: 50%;
 }
 
 #speakers .speaker-section .img-3 {
   background: url(../assets/Gwen-Steven.jpg);
-  width: 7rem;
-  height: 7rem;
-  background-size: cover;
-  background-position: center;
-  background-origin: border-box;
-  border-radius: 50%;
 }
 
 #speakers .speaker-section .img-4 {
   background: url(../assets/emily-miles.jpg);
-  width: 7rem;
-  height: 7rem;
-  background-size: cover;
-  background-position: center;
-  background-origin: border-box;
-  border-radius: 50%;
 }
 
 #speakers .speaker-section .img-5 {
   background: url(../assets/maria-delvin.jpg);
-  width: 7rem;
-  height: 7rem;
-  background-size: cover;
-  background-position: center;
-  background-origin: border-box;
-  border-radius: 50%;
 }
 
 #speakers .speaker-section .img-6 {
   background: url(../assets/steve-harris.jpg);
-  width: 7rem;
-  height: 7rem;
-  background-size: cover;
-  background-position: center;
-  background-origin: border-box;
-  border-radius: 50%;
 }
 
 .partners {
@@ -469,7 +442,7 @@ footer {
 
 .tickets-table table input {
   display: block;
-  margin: 0 auto;
+  margin: .4rem auto;
 }
 
 .tickets-table table tr {
@@ -707,12 +680,22 @@ footer {
   table {
     max-width: 1000px;
   }
+  table td:nth-child(1),
+  table th {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #4d4d4e;
+  }
+  table td:not(:first-child) {
+    color: #ec5242;
+    font-size: 1.3rem;
+  }
   .lunch {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
   .lunch h3 {
-    padding: 1rem;
+    padding: 1rem 1rem;
   }
   .lunch-table {
     padding-top: 0;

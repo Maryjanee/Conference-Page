@@ -67,7 +67,7 @@
         padding: 0;
 
         p {
-          padding-bottom: 1rem;
+          padding-bottom: $main-font;
         }
       }
     }
@@ -96,7 +96,7 @@
     }
 
     .program-content * {
-      margin: 1rem auto;
+      margin: $main-font auto;
     }
 
     a {
@@ -116,7 +116,7 @@
         margin-bottom: 2rem;
 
         figure {
-          margin-right: 1rem;
+          margin-right: $main-font;
         }
 
         .speaker-details {
@@ -154,13 +154,25 @@
 
   table {
     max-width: 1000px;
+
+    td:nth-child(1),
+    th {
+      font-size: $main-font;
+      font-weight: 300;
+      color: $blacka;
+    }
+
+    td:not(:first-child) {
+      color: $red;
+      font-size: 1.3rem;
+    }
   }
 
   .lunch {
     @include paddingbgTb;
 
     h3 {
-      padding: 1rem;
+      padding: 1rem $main-font;
     }
   }
 

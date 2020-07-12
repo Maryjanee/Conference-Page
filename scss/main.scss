@@ -116,8 +116,8 @@ header {
   display: block;
   width: 100%;
   border: 0;
-  padding: 1rem;
-  font-size: 1rem;
+  padding: $main-font;
+  font-size: $main-font;
 }
 
 #program {
@@ -137,7 +137,7 @@ header {
 
   .program-content {
     background: $blacka;
-    padding: 1rem;
+    padding: $main-font;
 
     h3 {
       color: $red;
@@ -152,7 +152,7 @@ header {
     display: block;
     background: $red;
     width: 70%;
-    padding: 1rem $padding-size;
+    padding: $main-font $padding-size;
   }
 }
 
@@ -165,50 +165,43 @@ header {
 
   .speaker-section {
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: $main-font;
 
     .speaker-card {
       width: 100%;
     }
 
     .speaker-details {
-      margin-left: 1rem;
+      margin-left: $main-font;
+    }
+    
+    .speaker-img {
+      @include speakerImg;
     }
 
     .img-1 {
       background: url(../assets/Alex-Foster.jpeg);
-
-      @include speakerImg;
     }
 
     .img-2 {
       background: url(../assets/Chaka-kann.jpg);
-
-      @include speakerImg;
     }
 
     .img-3 {
       background: url(../assets/Gwen-Steven.jpg);
-
-      @include speakerImg;
     }
 
     .img-4 {
       background: url(../assets/emily-miles.jpg);
-
-      @include speakerImg;
     }
 
     .img-5 {
       background: url(../assets/maria-delvin.jpg);
-
-      @include speakerImg;
     }
 
     .img-6 {
       background: url(../assets/steve-harris.jpg);
 
-      @include speakerImg;
     }
   }
 }
@@ -251,12 +244,12 @@ footer {
   }
 
   table {
-    margin-top: 1rem;
+    margin-top: $main-font;
     width: 100%;
-
+    
     input {
       display: block;
-      margin: 0 auto;
+      margin: .4rem auto;
     }
 
     tr {
@@ -321,7 +314,7 @@ footer {
   }
 
   a {
-    margin: 1rem 0;
+    margin: $main-font 0;
   }
 }
 
