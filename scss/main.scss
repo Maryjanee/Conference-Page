@@ -174,10 +174,6 @@ header {
     .speaker-details {
       margin-left: $main-font;
     }
-    
-    .speaker-img {
-      @include speakerImg;
-    }
 
     .img-1 {
       background: url(../assets/Alex-Foster.jpeg);
@@ -201,7 +197,15 @@ header {
 
     .img-6 {
       background: url(../assets/steve-harris.jpg);
+    }
 
+    .speaker-img {
+      width: 7rem;
+     height: 7rem;
+     background-size: cover;
+     background-position: center;
+     background-origin: border-box;
+     border-radius: 50%;
     }
   }
 }

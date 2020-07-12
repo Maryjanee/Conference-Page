@@ -124,21 +124,6 @@ p {
   border: 1px solid $red;
 }
 
-.step {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border: 1px solid #bfbfbf;
-  border-radius: 5rem;
-  font-size: 0.8rem;
-  width: 100%;
-  max-width: 400px;
-
-  span {
-    margin-left: 0.5rem;
-    color: $black;
-  }
-}
-
 @mixin textfont {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -148,15 +133,6 @@ p {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-@mixin speakerImg {
-  width: 7rem;
-  height: 7rem;
-  background-size: cover;
-  background-position: center;
-  background-origin: border-box;
-  border-radius: 50%;
 }
 
 @mixin paddingsmTb {

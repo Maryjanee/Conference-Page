@@ -164,21 +164,6 @@ p {
   border: 1px solid #ec5242;
 }
 
-.step {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border: 1px solid #bfbfbf;
-  border-radius: 5rem;
-  font-size: 0.8rem;
-  width: 100%;
-  max-width: 400px;
-}
-
-.step span {
-  margin-left: 0.5rem;
-  color: #272a31;
-}
-
 header .nav-social-links {
   display: none;
 }
@@ -359,15 +344,6 @@ header .date {
   margin-left: 1rem;
 }
 
-#speakers .speaker-section .speaker-img {
-  width: 7rem;
-  height: 7rem;
-  background-size: cover;
-  background-position: center;
-  background-origin: border-box;
-  border-radius: 50%;
-}
-
 #speakers .speaker-section .img-1 {
   background: url(../assets/Alex-Foster.jpeg);
 }
@@ -390,6 +366,15 @@ header .date {
 
 #speakers .speaker-section .img-6 {
   background: url(../assets/steve-harris.jpg);
+}
+
+#speakers .speaker-section .speaker-img {
+  width: 7rem;
+  height: 7rem;
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  border-radius: 50%;
 }
 
 .partners {
@@ -678,17 +663,20 @@ footer {
     width: 80%;
   }
   table {
-    max-width: 1000px;
+    max-width: 700px;
+  }
+  table .table-heading th {
+    font-size: 0.8rem;
   }
   table td:nth-child(1),
-  table th {
-    font-size: 1rem;
+  table th, table .date th {
+    font-size: 0.9rem;
     font-weight: 300;
     color: #4d4d4e;
   }
   table td:not(:first-child) {
     color: #ec5242;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .lunch {
     padding-top: 3rem;
@@ -739,5 +727,18 @@ footer {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+  }
+  .step {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid #bfbfbf;
+    border-radius: 5rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  .step span {
+    margin-left: 0.5rem;
+    color: #272a31;
   }
 }
