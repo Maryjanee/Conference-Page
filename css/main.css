@@ -351,6 +351,10 @@ header .date {
   grid-gap: 1rem;
 }
 
+#speakers .speaker-section .speaker-card {
+  width: 100%;
+}
+
 #speakers .speaker-section .speaker-details {
   margin-left: 1rem;
 }
