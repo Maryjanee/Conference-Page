@@ -601,6 +601,9 @@ footer {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
+  header .hero-area .description {
+    font-size: 1.2rem;
+  }
   header .menu-icon-container {
     display: none;
   }

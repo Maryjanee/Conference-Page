@@ -1,6 +1,4 @@
-# The-Newsweek-Clone
-
-This project consist of building a clone of the newsweek page using bootstrap
+# Conference Page 
 
 This project was built for a ficticious conference organization following the design idea by Cindy Shin on Behance.
 The website has 3 main pages, the home page, the about page and the tickets page.
