@@ -529,6 +529,15 @@ footer {
   font-weight: 700;
 }
 
+@media screen and (min-width: 375px) {
+  .hero-area h1 {
+    width: 100%;
+  }
+  .hero-area .description {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 6rem;
